@@ -18,7 +18,7 @@ st.set_page_config(
 def load_model_and_encoder():
     try:
         # Load the Keras model
-        model = tf.keras.models.load_model('urban_sound_classifier_v2.h5')
+        model = tf.keras.models.load_model('urban_sound_classifier.keras')
         
         # Load the Label Encoder
         with open('label_encoder_v2.pkl', 'rb') as f:
